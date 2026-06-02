@@ -1,0 +1,246 @@
+/*Hero Home & Menu*/
+.hero_area_geral {
+    width: 100%;
+    /* height: 480px; */
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px 10px 10px;
+}
+
+.hero_container_texto {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero_area {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero_titulo {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0px 5px 10px 5px;
+}
+
+.foco {
+    color: #ff6900;
+}
+
+.hero_mens {
+    text-align: justify;
+    padding: 0px 5px 10px 5px;
+}
+
+.hero_btn {
+    width: 100%;
+    /* height: 40px; */
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.btn_ped {
+    background: #ff6900;
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 8px;
+    width: 100px;
+    margin: 0px 8px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn_ped:hover {
+    background: #e65f00;
+}
+
+.link_hero {
+    width: 100px;
+    background: #d8d7d7;
+    border-radius: 8px;
+}
+
+.link_hero:hover {
+    background: #cdcaca;
+}
+
+.link_hero a {
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.btn_ped:hover,
+.link_hero:hover {
+    transform: translateY(-2px);
+}
+
+.ajustar_link {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.hero_img {
+    flex: 1;
+    padding: 0px;
+    width: 100%;
+    height: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.area_img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img_hero {
+    max-width: 290px;
+    max-height: 280px;
+}
+
+/*Hero Sobre*/
+.hero_sobre {
+    width: 100%;
+    /* height: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero_img_desc {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 10px 10px 0px 10px;
+    /* font-size: 1rem; */
+}
+
+.img_fundo {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.hero_desc_sobre {
+    text-align: center;
+
+    position: absolute;
+    top: 55px;
+    width: 85%;
+    height: 190px;
+    background: #e8e7e5e8;
+    color: #000;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* color: #fff; */
+
+}
+
+/*Media Querys*/
+@media only screen and (min-width:400px) {
+    .hero_area_geral {
+        /* height: 480px; */
+        flex-direction: column;
+    }
+
+    .hero_area {
+        flex-direction: column;
+    }
+
+    .hero_container_texto {
+        height: 100%;
+    }
+
+    .hero_titulo,
+    .hero_mens,
+    .hero_btn {
+        width: 100%;
+    }
+
+    .hero_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .hero_sobre {
+        height: 400px;
+    } */
+
+    .hero_desc_sobre {
+        height: 150px;
+        top: 75px;
+    }
+
+    /* .img_fundo {
+        height: 250px;
+    } */
+
+    .hero_area {
+        height: 100%;
+        /* flex-direction: row; */
+    }
+}
+
+@media only screen and (min-width:650px) {
+    .hero_area {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width:899px) {
+
+    /* .hero_sobre {
+        height: 300px;
+    } */
+
+    .hero_sobre,
+    .img_fundo {
+        height: 300px;
+    }
+
+    .hero_area {
+        flex-direction: row;
+    }
+
+}

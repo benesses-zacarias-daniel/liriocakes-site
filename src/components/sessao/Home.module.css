@@ -1,0 +1,48 @@
+:root {
+    --cor: #ff6900;
+    --corhover: #e65f00;
+}
+
+.home {
+    color: black;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px 10px 0px;
+}
+
+.btn_fome_pedido {
+    width: 180px;
+    background: var(--cor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 1.0rem;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+.btn_fome_pedido a {
+    color: #fff;
+    width: 180px;
+    height: 30px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.btn_fome_pedido img {
+    padding: 0px 5px 0px 0px;
+}
+
+.btn_fome_pedido:hover {
+    background: var(--corhover);
+    transform: translateY(-2px);
+}

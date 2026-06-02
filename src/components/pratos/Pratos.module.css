@@ -1,0 +1,125 @@
+.area_geral_prato {
+    width: 98%;
+    height: 370px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    border: 0.2rem solid rgb(181, 177, 177);
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(214, 213, 212, 0.883), 0 -4px 4px rgba(232, 225, 218, 0.883);
+}
+
+.area_geral_prato:hover {
+    transform: translateY(-4px);
+    border-color: #ff6900;
+}
+
+.area_geral_prato:hover .area_img_prato .img_prato {
+    width: 100%;
+    height: 320px;
+}
+
+.area_img_prato {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.area_img_prato .img_prato {
+    width: 98.3%;
+    height: 318px;
+    border-radius: 15px;
+}
+
+.info_prato {
+    height: 100px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+}
+
+.titulo_prato {
+    padding: 5px 0px 0px 0px;
+}
+
+.desc_prato {
+    padding: 5px 0px 0px 0px;
+}
+
+.preco_prato {
+    position: absolute;
+    color: #ff6900;
+    top: 15px;
+    right: 20px;
+    background-color: white;
+    width: 65px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+
+/* @media only screen and (min-width:399px) {
+    .area_geral_prato {
+        width: 340px;
+    }
+} */
+
+@media only screen and (min-width:400px) {
+    .area_geral_prato {
+        width: 440px;
+    }
+}
+
+@media only screen and (min-width:650px) {
+    .area_geral_prato {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width:850px) {
+    .area_geral_prato {
+        width: 270px;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .area_geral_prato {
+        width: 285px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .area_geral_prato {
+        width: 370px;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    .area_geral_prato {
+        width: 330px;
+    }
+}
+
+
+/* @media only screen and (min-width:850px) {
+    .area_geral_prato {
+        width: 410px;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .area_geral_prato {
+        width: 320px;
+    }
+} */

@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.links {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    white-space: nowrap;
+    transition: 0.4s;
+}
+
+.icone {
+    color: #ff6900;
+}
+
+.estiloActiva {
+    border-bottom: 2px solid #ff6900;
+    font-weight: 700;
+}

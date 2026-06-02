@@ -1,0 +1,62 @@
+.area_pedido {
+    width: 98%;
+    background: none;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(214, 213, 212, 0.883), 0 -4px 4px rgba(232, 225, 218, 0.883);
+    color: #000;
+}
+
+.area_pedido_home {
+    height: 170px;
+    border-color: #b6a9a9;
+    background: #e6dfdf;
+    padding: 5px;
+}
+
+.area_pedido_menu {
+    height: 170px;
+    background: #ff6900;
+    border-color: #ff6900;
+    padding: 10px;
+    color: #fff;
+}
+
+.titulo_pedido {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.desc_pedido {
+    text-align: center;
+    padding: 0px 5px 15px 5px;
+}
+
+.area_btn_pedido {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* padding: 5px; */
+}
+
+.img_pedido {
+    padding: 3px 0px 0px 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.ajustar_link {
+    width: 100%;
+    height: 100%;
+    /* color: white; */
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-decoration: none;
+}

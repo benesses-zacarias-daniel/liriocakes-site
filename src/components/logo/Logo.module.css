@@ -1,0 +1,15 @@
+.nome_take {
+    color: #ff6900;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: 1;
+    flex-direction: row;
+}
+
+.area_logo_nome {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}

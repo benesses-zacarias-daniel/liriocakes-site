@@ -1,0 +1,85 @@
+.area_geral_passos {
+    width: 100%;
+    background: #fff1eb;
+    padding: 18px 10px 10px 10px;
+    margin-bottom: 13px;
+}
+
+.titulo_passos {
+    width: 100%;
+    padding: 0px 0px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.min_info {
+    padding: 10px;
+    text-align: center;
+}
+
+.area_passos {
+    width: 100%;
+    /* height: 560px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.passos {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.titulo_passo {
+    text-align: center;
+    padding: 8px 0px 5px 0px;
+    font-weight: 600;
+}
+
+.passos_img {
+    width: 60px;
+    height: 60px;
+}
+
+.area_img_passos {
+    width: 105px;
+    height: 100px;
+    padding: 5px;
+    background: #ffffff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+
+}
+
+.info_passo {
+    width: 100%;
+}
+
+.desc_passos {
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.titulo_passo {
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+}
+
+/*Media Querys*/
+
+@media only screen and (min-width:899px) {
+    .area_passos {
+        flex-direction: row;
+    }
+}

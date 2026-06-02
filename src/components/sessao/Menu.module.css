@@ -1,0 +1,98 @@
+.menu {
+    color: black;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px 10px 0px;
+}
+
+.area_menu {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo_area_menu {
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+}
+
+.actao_menu_mais {
+    display: 100%;
+    padding: 0px 2px 2px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.min_desc_menu {
+    flex: 1;
+}
+
+.area_btn_ver {
+    width: 72px;
+}
+
+.btn_menu_ver {
+    width: 100%;
+    height: 30px;
+    background: none;
+    font-weight: 600;
+    color: #ff6900;
+}
+
+.btn_menu_ver:hover {
+    background: none;
+}
+
+.pratos_d_menu {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0px 10px 14px 10px;
+}
+
+
+.btn_comer {
+    width: 175px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+.btn_comer a {
+    color: #ff6900;
+    width: 175px;
+    height: 30px;
+    padding: 10px;
+}
+
+.btn_comer:hover {
+    background: #e7e5e5;
+    transform: translateY(-2px);
+}
+
+@media only screen and (min-width:500px) {
+    .pratos_d_menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
