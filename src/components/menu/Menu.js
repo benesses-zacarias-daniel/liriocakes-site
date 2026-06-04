@@ -1,6 +1,6 @@
+import { usePagina } from "../context/Context";
 import { Link } from "react-router-dom";
 import style from "./Menu.module.css";
-import { usePagina } from "../context/Context";
 
 const Menu = ({ mostrar = false }) => {
     const { paginaAtiva, mudarPagina } = usePagina();

@@ -11,7 +11,7 @@ const AppContext = () => {
       <Topo />
       <main className={style.conteudo_principal} ref={mainRef}>
         <Sessao />
-        <Footer nome={"MozFood"} provincia={"Nampula"} />
+        <Footer nome={" Lírio Cake's"} provincia={"Nampula"} />
       </main>
     </div>
   );

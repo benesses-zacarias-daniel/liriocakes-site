@@ -1,3 +1,7 @@
+:root {
+    --rosa: #e85d9e;
+}
+
 footer {
     width: 100%;
     height: 210px;
@@ -47,7 +51,7 @@ footer {
 
 .nav_titulo {
     width: 100%;
-    color: #ff6900;
+    color: var(--rosa);
     font-weight: 800;
     height: 24px;
     display: flex;
