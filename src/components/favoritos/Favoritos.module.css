@@ -1,5 +1,6 @@
 :root {
     --rosa: #f83490;
+    --marrom: #5a3b2e;
 }
 
 .area_favoritos {
@@ -10,6 +11,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 10px 10px 14px 10px;
+    color: var(--marrom);
 }
 
 .titulo_e_min_desc {

@@ -1,5 +1,6 @@
 :root {
     --rosa: #e85d9e;
+    --marrom: #5a3b2e;
 }
 
 .menu {
@@ -20,6 +21,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: var(--marrom);
 }
 
 .titulo_area_menu {
