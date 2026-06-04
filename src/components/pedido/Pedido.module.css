@@ -1,3 +1,9 @@
+:root {
+    --rosa: #f83490;
+    --marrom: #5a3b2e;
+    --sinza: rgba(242, 196, 242, 0.933);
+}
+
 .area_pedido {
     width: 98%;
     background: none;
@@ -8,29 +14,27 @@
 }
 
 .area_pedido_home {
-    height: 170px;
-    border-color: #b6a9a9;
-    background: #e6dfdf;
+    border-color: var(--marrom);
+    background: var(--sinza);
     padding: 5px;
 }
 
 .area_pedido_menu {
-    height: 170px;
-    background: #ff6900;
-    border-color: #ff6900;
-    padding: 10px;
+    background: var(--rosa);
+    border-color: var(--rosa-claro);
+    padding: 5px;
     color: #fff;
 }
 
 .titulo_pedido {
     width: 100%;
     text-align: center;
-    padding: 15px;
+    padding: 5px;
 }
 
 .desc_pedido {
     text-align: center;
-    padding: 0px 5px 15px 5px;
+    padding: 0px 5px 10px 5px;
 }
 
 .area_btn_pedido {

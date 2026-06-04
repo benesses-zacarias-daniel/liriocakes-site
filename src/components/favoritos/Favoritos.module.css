@@ -1,3 +1,7 @@
+:root {
+    --rosa: #f83490;
+}
+
 .area_favoritos {
     width: 100%;
     flex: 1;
@@ -53,7 +57,7 @@
     height: 30px;
     background: none;
     font-weight: 600;
-    color: #ff6900;
+    color: var(--rosa);
     display: flex;
     align-items: center;
     justify-content: space-around;

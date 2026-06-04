@@ -1,3 +1,7 @@
+:root {
+    --rosa: #e85d9e;
+}
+
 .menu {
     color: black;
     width: 100%;
@@ -46,7 +50,7 @@
     height: 30px;
     background: none;
     font-weight: 600;
-    color: #ff6900;
+    color: var(--rosa);
 }
 
 .btn_menu_ver:hover {
@@ -79,7 +83,7 @@
 }
 
 .btn_comer a {
-    color: #ff6900;
+    color: var(--rosa);
     width: 175px;
     height: 30px;
     padding: 10px;

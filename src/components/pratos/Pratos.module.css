@@ -1,3 +1,7 @@
+:root {
+    --rosa: #f83490;
+}
+
 .area_geral_prato {
     width: 98%;
     height: 370px;
@@ -13,8 +17,8 @@
 }
 
 .area_geral_prato:hover {
-    transform: translateY(-4px);
-    border-color: #ff6900;
+    transform: translateY(-2px);
+    border-color: var(--rosa);
 }
 
 .area_geral_prato:hover .area_img_prato .img_prato {
@@ -54,7 +58,7 @@
 
 .preco_prato {
     position: absolute;
-    color: #ff6900;
+    color: var(--rosa);
     top: 15px;
     right: 20px;
     background-color: white;
