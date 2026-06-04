@@ -8,7 +8,7 @@ const Menu = ({ mostrar = false }) => {
         <nav>
             <Link to={"/mozfood/home"} className={`${style.links} ${paginaAtiva === "home" ? style.estiloActiva : ""}`} onClick={(evt) => {
                 mudarPagina("home");
-            }}>{mostrar && ("> ")}Home</Link>
+            }}>{mostrar && ("> ")}Início</Link>
 
             <Link to={"/mozfood/menu"} className={`${style.links} ${paginaAtiva === "menu" ? style.estiloActiva : ""}`} onClick={(evt) => {
                 mudarPagina("menu");

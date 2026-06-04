@@ -7,7 +7,7 @@ const Logo = ({ logo, src_log, alt }) => {
             {/* {src_log && ( */}
             <Img src={src_log} estilo={""} alt={alt} />
             {/* )} */}
-            <h2 className={style.nome_take}>{logo}</h2>
+            <h2 className={style.nome_lirio}>{logo}</h2>
         </div>
     );
 }

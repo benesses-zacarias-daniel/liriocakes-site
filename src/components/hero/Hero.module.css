@@ -1,4 +1,12 @@
+:root {
+    --rosa: #f83490;
+    --rosa-claro: #e85d9e;
+    --rosa-branco: #fcd1e2;
+    --marrom: #5a3b2e;
+}
+
 /*Hero Home & Menu*/
+
 .hero_area_geral {
     width: 100%;
     /* height: 480px; */
@@ -34,7 +42,7 @@
 }
 
 .foco {
-    color: #ff6900;
+    color: var(--rosa);
 }
 
 .hero_mens {
@@ -53,7 +61,7 @@
 }
 
 .btn_ped {
-    background: #ff6900;
+    background: var(--rosa);
     border: none;
     color: white;
     font-weight: 900;
@@ -67,17 +75,17 @@
 }
 
 .btn_ped:hover {
-    background: #e65f00;
+    background: var(--rosa-claro);
 }
 
 .link_hero {
     width: 100px;
-    background: #d8d7d7;
+    background: var(--rosa-branco);
     border-radius: 8px;
 }
 
 .link_hero:hover {
-    background: #cdcaca;
+    background: #d79cb2;
 }
 
 .link_hero a {
@@ -89,7 +97,7 @@
 
 .btn_ped:hover,
 .link_hero:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 .ajustar_link {
