@@ -73,7 +73,7 @@
 
 
 .btn_comer {
-    width: 175px;
+    width: 220px;
     background: #fff;
     display: flex;
     align-items: center;
@@ -86,14 +86,14 @@
 
 .btn_comer a {
     color: var(--rosa);
-    width: 175px;
+    width: 100%;
     height: 30px;
     padding: 10px;
 }
 
 .btn_comer:hover {
     background: #e7e5e5;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 @media only screen and (min-width:500px) {

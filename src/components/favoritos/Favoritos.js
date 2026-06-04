@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
+import { usePagina } from "../context/Context";
 import Pratos from "../pratos/Pratos";
 import style from "./Favoritos.module.css"
-import Food from "../assets/img.png";
 import Seta from "../assets/seta.svg";
 import Button from "../buttons/Button";
-import { usePagina } from "../context/Context";
+
+import Cake1 from "../assets/cakes/cake1.jpg";
+import Cake2 from "../assets/cakes/cake2.jpg";
+import Cake3 from "../assets/cakes/cake3.jpg";
 import Img from "../img/Img";
 
 const Favoritos = () => {
@@ -18,10 +21,10 @@ const Favoritos = () => {
                     <p className={style.min_desc_menu}>Os produtos mais pedidos pelos nossos clientes.</p>
 
                     <div className={style.area_btn_ver}>
-                        <Link to={"/mozfood/menu"}>
-                            <Button estilo={style.btn_menu_ver} onClick={() => {
-                                mudarPagina("menu");
-                            }}>
+                        <Link to={"/liriocakes/catalado"} onClick={() => {
+                            mudarPagina("catalogo");
+                        }}>
+                            <Button estilo={style.btn_menu_ver} onClick={() => { }}>
                                 Ver tudo <Img alt={"Imagem de seta"} estilo={style.seta_img} src={Seta} />
                             </Button>
                         </Link>
@@ -30,13 +33,9 @@ const Favoritos = () => {
 
             </div>
             <div className={style.area_fav_pratos}>
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                <Pratos src={Food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                <Pratos src={Cake1} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                <Pratos src={Cake2} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                <Pratos src={Cake3} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
             </div>
         </div>
     )

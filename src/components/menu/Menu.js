@@ -12,7 +12,7 @@ const Menu = ({ mostrar = false }) => {
 
             <Link to={"/liriocakes/catalogo"} className={`${style.links} ${paginaAtiva === "catalogo" ? style.estiloActiva : ""}`} onClick={(evt) => {
                 mudarPagina("catalogo");
-            }}>{mostrar && ("> ")}Catálago</Link>
+            }}>{mostrar && ("> ")}Catálogo</Link>
 
             <Link to={"/liriocakes/sobre"} className={`${style.links} ${paginaAtiva === "sobre" ? style.estiloActiva : ""}`} onClick={(evt) => {
                 mudarPagina("sobre");

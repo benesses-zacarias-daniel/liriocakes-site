@@ -5,12 +5,30 @@ import style from "./Catalogo.module.css";
 import Pedido from "../pedido/Pedido";
 import Pratos from "../pratos/Pratos";
 import Passos from "../pratos/Passos";
-import ImgHero from "../assets/img.png";
-import Mensagem from "../assets/cht.svg";
-import food from "../assets/img.png";
-import colherGarfo from "../assets/comer.svg";
-import carrinho from "../assets/carrinho.svg";
-import eat from "../assets/eat.svg";
+import Lirio from "../assets/image.png";
+import Mensagem from "../assets/sms.svg";
+import WhatsApp from "../assets/cht.svg";
+import Cake1 from "../assets/cakes/cake1.jpg";
+import Cake2 from "../assets/cakes/cake2.jpg";
+import Cake3 from "../assets/cakes/cake3.jpg";
+import Cake4 from "../assets/cakes/cake4.jpg";
+import Cake5 from "../assets/cakes/cake5.jpg";
+import Cake6 from "../assets/cakes/cake6.jpg";
+import Cake7 from "../assets/cakes/cake7.jpg";
+import Cake8 from "../assets/cakes/cake8.jpg";
+import Cake9 from "../assets/cakes/cake9.jpg";
+import Cake10 from "../assets/cakes/cake10.jpg";
+import Cake11 from "../assets/cakes/cake11.jpg";
+import Cake12 from "../assets/cakes/cake12.jpg";
+import Cake13 from "../assets/cakes/cake13.jpg";
+import Cake14 from "../assets/cakes/cake14.jpg";
+import Cake15 from "../assets/cakes/cake15.jpg";
+import Cake16 from "../assets/cakes/cake16.jpg";
+import Cake17 from "../assets/cakes/cake17.jpg";
+import Cake18 from "../assets/cakes/cake18.jpg";
+import Cake19 from "../assets/cakes/cake19.jpg";
+import Cake from "../assets/cake.svg";
+import Presente from "../assets/gift.svg";
 
 const Catalogo = () => {
     const [mostrarTodosPratos, setMostrarTodosPratos] = useState(false);
@@ -27,7 +45,7 @@ const Catalogo = () => {
 
     return (
         <div className={style.menu}>
-            <Hero alt={"Ícone do hero da sessão do meun!"} src={ImgHero} mostrarExplorar={false} imgFundo={false} mens={"Descubra bolos, doces e salgados preparados especialmente para você."} titulo={"Nosso Catálogo"} tituloFoco={""} />
+            <Hero alt={"Ícone do hero da sessão do meun!"} src={Lirio} mostrarExplorar={false} imgFundo={false} mens={"Descubra bolos, doces e salgados preparados especialmente para você."} titulo={"Nosso Catálogo"} tituloFoco={""} />
             <div className={style.area_menu}>
                 <div className={style.titulo_area_menu}>
                     <h2>Menu</h2>
@@ -43,34 +61,35 @@ const Catalogo = () => {
                     </div>
                 </div>
                 <div className={style.pratos_d_menu}>
-                    <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                    <Pratos src={food} alt={"Prato de "} desc={"Mathápa de couvé"} preco={250} prato={"Mathápa"} />
-                    <Pratos src={food} alt={"Prato de "} desc={"Sushi fresco"} preco={250} prato={"Sushimi"} />
+                    <Pratos src={Cake1} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                    <Pratos src={Cake2} alt={"Prato de "} desc={"Mathápa de couvé"} preco={250} prato={"Mathápa"} />
+                    <Pratos src={Cake3} alt={"Prato de "} desc={"Sushi fresco"} preco={250} prato={"Sushimi"} />
 
                     {
                         mostrarTodosPratos && (
                             <>
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={food} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake4} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake5} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake6} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake7} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake8} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake9} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake10} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake11} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake12} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake13} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake14} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake15} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake16} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake17} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake18} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
+                                <Pratos src={Cake19} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
                             </>
                         )
                     }
                 </div>
-                <Passos titulo={"Como Funciona o MozFood"} minInfo={"A sua refeição favorita em apenas 3 passos simples."} srcs={[colherGarfo, carrinho, eat]} descs={["Escolha centenas de pratos e restaurantes selecionados.", "Confirme o seu pedido e escolha o método de pagamento.", "Receba a sua comida quente e fresca em tempo recorde."]} alts={["Ícone de colher e garfo cruzados", "Ícone de carrinho de super mercado", "Ícone de carro de entrega"]} passos={["1. Escolha", "2. Peça", "3. Saboreie"]} />
-                <Pedido tipo={2} alt={"Ícone de mensagem"} titulo_pedido={"Pronto pra comer ?"} desc_pedido={"Peçca agora pelos nossos canais exclusivos no WhatsApp e receba descontos especias na sua primeira compra."} src={Mensagem} texto={"Pedir pelo WhatsApp"} estiloBtn={style.btn_comer} />
+                <Passos titulo={"Os 3 Passos da Encomenda"} minInfo={""} srcs={[Cake, Mensagem, Presente]} descs={["Explore nosso catálogo e encontre o bolo ou doce prefeito para sua ocasião.", "Entre em contacto pelo WhatsApp e informe os dados do seu pedido.", "Produzimos tudo com carrinho e entregamos no prazo combinado."]} alts={["Ícone de colher e garfo cruzados", "Ícone de carrinho de super mercado", "Ícone de carro de entrega"]} passos={["Escolha", "Encomende", "Receba"]} />
+                <Pedido tipo={2} alt={"Ícone de mensagem"} titulo_pedido={"Encontrou o bolo dos seus sonhos ?"} desc_pedido={"Clique no botão abaixo para nos enviar sua escolha pelo WhatsApp. Personalizamos o tamanho, a massa e o recheio do jeito que você desejar!"} src={WhatsApp} texto={"Encomendar pelo WhatsApp"} estiloBtn={style.btn_comer} />
             </div>
         </div>
     );
