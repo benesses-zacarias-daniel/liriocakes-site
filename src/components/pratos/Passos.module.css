@@ -1,13 +1,22 @@
+:root {
+    --rosa: #f83490;
+    --marrom: #644639;
+    --rosa-branco: #fcd1e2;
+    --dourado: #c9a13b;
+}
+
 .area_geral_passos {
     width: 100%;
-    background: #fff1eb;
+    /* background: var(--rosa-branco); */
+    background: var(--rosa-branco);
     padding: 18px 10px 10px 10px;
     margin-bottom: 13px;
+    color: var(--marrom);
 }
 
 .titulo_passos {
     width: 100%;
-    padding: 0px 0px 8px 0px;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +67,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 4px 12px var(--dourado);
 
 }
 

@@ -1,7 +1,8 @@
 :root {
     --rosa: #f83490;
     --marrom: #5a3b2e;
-    --sinza: rgba(242, 196, 242, 0.933);
+    --rosa-branco: #fcd1e2;
+    --dourado: #c9a13b;
 }
 
 .area_pedido {
@@ -10,20 +11,20 @@
     border: 1px solid;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(214, 213, 212, 0.883), 0 -4px 4px rgba(232, 225, 218, 0.883);
-    color: #000;
+    color: var(--marrom);
 }
 
 .area_pedido_home {
-    border-color: var(--marrom);
-    background: var(--sinza);
+    border-color: var(--dourado);
+    background: var(--rosa-branco);
     padding: 5px;
 }
 
 .area_pedido_menu {
-    background: var(--rosa);
-    border-color: var(--rosa-claro);
+    background: var(--rosa-branco);
+    border-color: var(--marrom);
     padding: 5px;
-    color: #fff;
+    color: var(--marrom);
 }
 
 .titulo_pedido {

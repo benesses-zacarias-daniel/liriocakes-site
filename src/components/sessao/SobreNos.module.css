@@ -1,5 +1,12 @@
+:root {
+    --rosa: #f83490;
+    --marrom: #644639;
+    --rosa-branco: #fcd1e2;
+    --dourado: #c9a13b;
+}
+
 .sobre {
-    color: #000;
+    color: var(--marrom);
     width: 100%;
     flex: 1;
     display: flex;
@@ -26,7 +33,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #fff;
+    color: var(--marrom);
     padding: 10px;
 }
 
@@ -48,7 +55,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    color: #000;
+    color: var(--marrom);
 }
 
 .desc_mens {
@@ -77,10 +84,14 @@
 .btn_sobre_acao {
     width: 140px;
     height: 30px;
-    background: #a04100;
+    background: var(--rosa);
     border-radius: 12px;
     color: #fff;
     font-weight: 600;
+}
+
+.btn_sobre_acao:hover {
+    transform: translateY(-1px);
 }
 
 @media only screen and (min-width:400px) {
