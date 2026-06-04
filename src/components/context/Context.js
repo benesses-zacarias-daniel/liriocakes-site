@@ -3,7 +3,7 @@ import { createContext, useState, useContext, useRef } from "react";
 const PaginaContext = createContext();
 
 const Context = ({ children }) => {
-    const [paginaAtiva, setPaginaAtiva] = useState('home');
+    const [paginaAtiva, setPaginaAtiva] = useState('inicio');
     const mainRef = useRef(null);
 
     const mudarPagina = (novaPagina) => {

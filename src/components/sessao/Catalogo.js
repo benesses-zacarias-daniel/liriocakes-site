@@ -1,18 +1,18 @@
 import { useState } from "react";
 import Button from "../buttons/Button";
 import Hero from "../hero/Hero";
-import style from "./Menu.module.css";
+import style from "./Catalogo.module.css";
 import Pedido from "../pedido/Pedido";
 import Pratos from "../pratos/Pratos";
 import Passos from "../pratos/Passos";
 import ImgHero from "../assets/img.png";
 import Mensagem from "../assets/cht.svg";
 import food from "../assets/img.png";
-import colherGarfo from "../assets//comer.svg";
+import colherGarfo from "../assets/comer.svg";
 import carrinho from "../assets/carrinho.svg";
 import eat from "../assets/eat.svg";
 
-const Menu = () => {
+const Catalogo = () => {
     const [mostrarTodosPratos, setMostrarTodosPratos] = useState(false);
 
     const onClick = (evt) => {
@@ -76,4 +76,4 @@ const Menu = () => {
     );
 }
 
-export default Menu;
+export default Catalogo;

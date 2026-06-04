@@ -29,10 +29,10 @@ const Hero = ({ mostrarExplorar = false, imgFundo = false, src, alt, titulo, tit
                             }} />
 
                             {mostrarExplorar && (
-                                <Button children={<Link to={"/mozfood/menu"}>
+                                <Button children={<Link to={"/liriocakes/catalogo"}>
                                     Ver Catálogo
                                 </Link>} estilo={style.link_hero} onClick={() => {
-                                    mudarPagina("menu");
+                                    mudarPagina("catalogo");
                                 }} />)
                             }
 

@@ -6,15 +6,15 @@ const Menu = ({ mostrar = false }) => {
     const { paginaAtiva, mudarPagina } = usePagina();
     return (
         <nav>
-            <Link to={"/mozfood/home"} className={`${style.links} ${paginaAtiva === "home" ? style.estiloActiva : ""}`} onClick={(evt) => {
-                mudarPagina("home");
+            <Link to={"/liriocakes/inicio"} className={`${style.links} ${paginaAtiva === "inicio" ? style.estiloActiva : ""}`} onClick={(evt) => {
+                mudarPagina("inicio");
             }}>{mostrar && ("> ")}Início</Link>
 
-            <Link to={"/mozfood/menu"} className={`${style.links} ${paginaAtiva === "menu" ? style.estiloActiva : ""}`} onClick={(evt) => {
-                mudarPagina("menu");
+            <Link to={"/liriocakes/catalogo"} className={`${style.links} ${paginaAtiva === "catalogo" ? style.estiloActiva : ""}`} onClick={(evt) => {
+                mudarPagina("catalogo");
             }}>{mostrar && ("> ")}Catálago</Link>
 
-            <Link to={"/mozfood/sobre"} className={`${style.links} ${paginaAtiva === "sobre" ? style.estiloActiva : ""}`} onClick={(evt) => {
+            <Link to={"/liriocakes/sobre"} className={`${style.links} ${paginaAtiva === "sobre" ? style.estiloActiva : ""}`} onClick={(evt) => {
                 mudarPagina("sobre");
             }}>{mostrar && ("> ")}Sobre Nós</Link>
         </nav>
