@@ -1,7 +1,7 @@
 import Logo from "../logo/Logo";
-import Lanche from "../assets/lanche.svg"
 import style from "./Footer.module.css"
 import Menu from "../menu/Menu";
+import Lanche from "../assets/cakeLogoSF.png"
 
 const Footer = ({ nome, provincia }) => {
     return (
@@ -9,7 +9,7 @@ const Footer = ({ nome, provincia }) => {
             <div className={style.area_nome_nav}>
                 <div className={style.nome_min_desc}>
                     <Logo alt={`Logo do ${nome}`} src_log={Lanche} logo={nome} />
-                    <p>Sabores autênticos de Moçambique entregues directo à sua porta.</p>
+                    <p>Bolos, doces e refeições preparados com dedicação para tornar os seus momentos ainda mais especiais.</p>
                 </div>
                 <div className={style.area_atalho_nav}>
                     <div className={style.nav_titulo}>Navegação</div>

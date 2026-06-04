@@ -20,20 +20,20 @@ const SobreNos = () => {
 
     return (
         <div className={style.sobre}>
-            <Hero mens={"Elevamos a herança culinária de Moçambique com a convivência da tecnologia moderna, entregando autenticidade à sua porta."} alt={"Imagem de fundo bla!"} src={Fundo} titulo={"Saber que Une Gerações"} imgFundo={true} mostrarExplorar={false} />
+            <Hero mens={"A Lírio Cake's nasceu da paixão pela confeitaria artesanal e pelo desejo de transformar momentos especiais em memórias inesquecíveis. Cada produto é preparado com dedicação, criatividade e ingredientes de qualidade."} alt={"Imagem de fundo bla!"} src={Fundo} titulo={"Uma história feita de sabor e dedicação."} imgFundo={true} mostrarExplorar={false} />
             <HistoriaSobre />
-            <Passos alts={["Ícone de folha de árvore", "Ícone de energia", "Ícone de colher e garfo"]} descs={["Parcerias directas com produtores locais garantem que o sabor cheguee vibrante ao seu prato.", "Logística inteligente e rastreamento em tempo real para que sua comida chegue sempre quente.", "Receitas que respeitam as tradições, preparadas por quem realmente entende da nossa terra."]} minInfo={"Nossos pilares fundamentais garantem que cada pedido seja uma experiencia de excelência"} passos={["Ingredientes Frescos", "Entrega Rápida", "Sabor Autêntico"]} srcs={[Fresco, Speed, Lanche]} titulo={"O Que Nos Define"} />
+            <Passos alts={["Ícone de folha de árvore", "Ícone de energia", "Ícone de colher e garfo"]} descs={["Utilizamos ingredientes cuidadosamente escolhidos para garantir o melhor sabor.", "Valorizamos cada cliente e procuramos oferecer uma experiência acolhedora.", "Trabalhamos para que os pedidos cheguem frescos e no menor tempo possível."]} minInfo={"Levar sabor, qualidade e felicidade aos nossos clientes através de produtos feitos com carinho."} passos={["Qualidade", "Criatividade", "Compromisso"]} srcs={[Fresco, Speed, Lanche]} titulo={"Nossos Valores"} />
             <div className={style.area_acao_sobre}>
                 <div className={style.sobre_img_desc}>
                     <Img alt={"Imagem de fundo bla!"} estilo={style.img_fundo} src={Fundo} />
                     <div className={style.area_desc_sobre}>
                         <div className={style.desc_mens}>
-                            <h2>Pronto para provar a diferença?</h2>
-                            <p>Explore os melhores sabores de Moçambique agora mesmo.</p>
+                            <h2>Venha experimentar nossos sabores.</h2>
+                            <p>Entre em contacto e faça a sua encomenda hoje mesmo.</p>
                         </div>
                         <div className={style.area_btn_sobre}>
                             <Link to={"/mozfood/menu"}>
-                                <Button children={"Ver Menu Completo"} estilo={style.btn_sobre_acao} onClick={() => {
+                                <Button children={"Ver Catálogo Completo"} estilo={style.btn_sobre_acao} onClick={() => {
                                     onClick();
                                 }} />
                             </Link>

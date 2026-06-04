@@ -27,7 +27,7 @@ const Menu = () => {
 
     return (
         <div className={style.menu}>
-            <Hero alt={"Ícone do hero da sessão do meun!"} src={ImgHero} mostrarExplorar={false} imgFundo={false} mens={"Peça os pratos mais icónicos dos melhores restaurantes locais com a rapidez e segurança que você merece."} titulo={"O melhor da culinária moçambicana"} tituloFoco={" na sua mesa."} />
+            <Hero alt={"Ícone do hero da sessão do meun!"} src={ImgHero} mostrarExplorar={false} imgFundo={false} mens={"Descubra bolos, doces e salgados preparados especialmente para você."} titulo={"Nosso Catálogo"} tituloFoco={""} />
             <div className={style.area_menu}>
                 <div className={style.titulo_area_menu}>
                     <h2>Menu</h2>

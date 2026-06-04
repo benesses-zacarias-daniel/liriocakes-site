@@ -68,7 +68,7 @@
     color: white;
     font-weight: 900;
     border-radius: 8px;
-    width: 100px;
+    width: 130px;
     margin: 0px 8px 0px 0px;
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@
 }
 
 .link_hero {
-    width: 100px;
+    width: 130px;
     background: var(--rosa-branco);
     border-radius: 8px;
 }

@@ -5,8 +5,7 @@ const HistoriaSobre = () => {
         <div className={style.area_geral_historia}>
             <div className={style.historia}>
                 <h2>Nossa História</h2>
-                <p>O MozFood nasceu da paixão por redescobrir as raízes da cozinha moçambicana. Percebemos que, na correria do dia-a-dia, as receitas tradicionais estavam perdendo espaço para a convivência sem alma.</p>
-                <p>Fundado em Nampula, nossa missão inicial era simples: criar uma ponte digital entre cozinhas artesanais e as famílias urbanas, mantendo vivo o segredo do tempero que atravessa séculos.</p>
+                <p>A Lírio Cake's começou como um pequeno sonho familiar e cresceu graças à confiança dos seus clientes. Nosso objetivo é proporcionar experiências inesquecíveis através de bolos, doces, salgados e refeições preparadas com ingredientes selecionados.</p>
             </div>
         </div>
     );

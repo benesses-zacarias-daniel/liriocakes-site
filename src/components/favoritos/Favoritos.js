@@ -15,7 +15,7 @@ const Favoritos = () => {
             <div className={style.titulo_e_min_desc}>
                 <h2>Favoritos da Semana</h2>
                 <div className={style.actao_menu_mais}>
-                    <p className={style.min_desc_menu}>Os pratos mais pedidos dos últimos 7 dias.</p>
+                    <p className={style.min_desc_menu}>Os produtos mais pedidos pelos nossos clientes.</p>
 
                     <div className={style.area_btn_ver}>
                         <Link to={"/mozfood/menu"}>

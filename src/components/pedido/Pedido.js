@@ -15,7 +15,7 @@ const Pedido = ({ tipo, titulo_pedido, desc_pedido, alt, src, texto, estiloBtn }
             </div>
             <div className={style.area_btn_pedido}>
                 <Button estilo={estiloBtn} onClick={() => { }}>
-                    <a href="https://wa.me/258849754315?text=Olá! Quero fazer um pedido" className={style.ajustar_link}><Img alt={alt} estilo={style.img_pedido} src={src} /> {texto}</a>
+                    <a href="https://wa.me/258849754315?text=Olá! Quero fazer um pedido" className={style.ajustar_link}><Img alt={alt} estilo={style.img_pedido} src={src} />{texto}</a>
                 </Button>
             </div>
         </div>

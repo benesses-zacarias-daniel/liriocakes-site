@@ -12,7 +12,7 @@ const Menu = ({ mostrar = false }) => {
 
             <Link to={"/mozfood/menu"} className={`${style.links} ${paginaAtiva === "menu" ? style.estiloActiva : ""}`} onClick={(evt) => {
                 mudarPagina("menu");
-            }}>{mostrar && ("> ")}Menu</Link>
+            }}>{mostrar && ("> ")}Catálago</Link>
 
             <Link to={"/mozfood/sobre"} className={`${style.links} ${paginaAtiva === "sobre" ? style.estiloActiva : ""}`} onClick={(evt) => {
                 mudarPagina("sobre");

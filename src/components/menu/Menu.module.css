@@ -6,7 +6,7 @@
 
 nav {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-wrap: nowrap;
     overflow: hidden;
 }
@@ -14,7 +14,7 @@ nav {
 .links {
     color: var(--marrom);
     text-decoration: none;
-    font-size: 12px;
+    font-size: 1rem;
     white-space: nowrap;
     transition: 0.4s;
 }

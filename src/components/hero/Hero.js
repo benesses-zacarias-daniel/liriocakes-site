@@ -24,13 +24,13 @@ const Hero = ({ mostrarExplorar = false, imgFundo = false, src, alt, titulo, tit
                         </div>
                         <div className={style.hero_btn}>
 
-                            <Button children={<a href="https://wa.me/258849754315?text=Olá! Quero fazer um pedido" className={style.ajustar_link}>Fazer Pedido</a>} estilo={style.btn_ped} onClick={() => {
-                                console.log("Fazer Pedido");
+                            <Button children={<a href="https://wa.me/258849754315?text=Olá! Quero fazer um pedido" className={style.ajustar_link}>Fazer Encomenda</a>} estilo={style.btn_ped} onClick={() => {
+                                console.log("Fazer Encomenda");
                             }} />
 
                             {mostrarExplorar && (
                                 <Button children={<Link to={"/mozfood/menu"}>
-                                    Explorar Menu
+                                    Ver Catálogo
                                 </Link>} estilo={style.link_hero} onClick={() => {
                                     mudarPagina("menu");
                                 }} />)

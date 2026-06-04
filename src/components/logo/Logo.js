@@ -5,7 +5,7 @@ const Logo = ({ logo, src_log, alt }) => {
     return (
         <div className={style.area_logo_nome}>
             {/* {src_log && ( */}
-            <Img src={src_log} estilo={""} alt={alt} />
+            <Img src={src_log} estilo={style.img_logo} alt={alt} />
             {/* )} */}
             <h2 className={style.nome_lirio}>{logo}</h2>
         </div>

@@ -6,10 +6,16 @@
     align-items: center;
     justify-content: 1;
     flex-direction: row;
+    font-size: 1.1rem;
 }
 
 .area_logo_nome {
     width: auto;
     display: flex;
     flex-direction: row;
+}
+
+.img_logo {
+    width: 24px;
+    height: 24px;
 }

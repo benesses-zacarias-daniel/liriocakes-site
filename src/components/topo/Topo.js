@@ -2,7 +2,7 @@ import Button from "../buttons/Button";
 import Logo from "../logo/Logo";
 import Menu from "../menu/Menu";
 import style from "./Topo.module.css"
-import Lanche from "../assets/lanche.svg"
+import Lanche from "../assets/cakeLogoSF.png"
 
 const Topo = () => {
 

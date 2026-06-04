@@ -15,26 +15,25 @@
 }
 
 .btn_fome_pedido {
-    width: 180px;
-    background: var(--rosa);
+    width: 190px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     font-size: 1.0rem;
     color: #fff;
+    background: var(--rosa);
     font-weight: 800;
     border-radius: 10px;
 }
 
 .btn_fome_pedido a {
     color: #fff;
-    width: 180px;
+    flex: 1;
     height: 30px;
-    padding: 12px 24px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
 }
 
