@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { usePagina } from "../context/Context";
-import Pratos from "../pratos/Pratos";
+import Pratos from "../bolos/Bolos";
 import style from "./Favoritos.module.css"
 import Seta from "../assets/seta.svg";
 import Button from "../buttons/Button";

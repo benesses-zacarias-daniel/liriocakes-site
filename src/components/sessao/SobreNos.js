@@ -5,7 +5,7 @@ import style from "./SobreNos.module.css";
 import Fundo from "../assets/img.png";
 import Button from "../buttons/Button";
 import { usePagina } from "../context/Context";
-import Passos from "../pratos/Passos";
+import Passos from "../bolos/Passos";
 import Mensagem from "../assets/sms.svg";
 import Cake from "../assets/cake.svg";
 import Presente from "../assets/gift.svg";

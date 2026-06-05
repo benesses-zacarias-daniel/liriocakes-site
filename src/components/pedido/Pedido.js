@@ -4,6 +4,9 @@ import style from "./Pedido.module.css";
 
 const Pedido = ({ tipo, titulo_pedido, desc_pedido, alt, src, texto, estiloBtn }) => {
     const estiloFinal = tipo === 1 ? style.area_pedido_home : style.area_pedido_menu;
+    const numero = "258866204359";
+    const mens = "Olá! Gostaria de fazer uma encomenda na Lírio Cake's.";
+    const linkWhatsApp = `https://wa.me/${numero}?text=${mens}`
 
     return (
         <div className={`${style.area_pedido} ${estiloFinal}`}>
@@ -15,7 +18,7 @@ const Pedido = ({ tipo, titulo_pedido, desc_pedido, alt, src, texto, estiloBtn }
             </div>
             <div className={style.area_btn_pedido}>
                 <Button estilo={estiloBtn} onClick={() => { }}>
-                    <a href="https://wa.me/258849754315?text=Olá! Quero fazer um pedido" className={style.ajustar_link}><Img alt={alt} estilo={style.img_pedido} src={src} />{texto}</a>
+                    <a href={`${linkWhatsApp}`} className={style.ajustar_link}><Img alt={alt} estilo={style.img_pedido} src={src} />{texto}</a>
                 </Button>
             </div>
         </div>

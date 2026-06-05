@@ -41,12 +41,52 @@ footer {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 10px 0px 0px 0px;
+    padding: 0px;
 }
 
 .nome_min_desc p {
     text-align: start;
-    padding: 10px 0px 0px 0px;
+    padding: 6px 0px 0px 0px;
+}
+
+.area_contacto {
+    padding: 2px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.contacto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 2px 0px 0px 10px;
+}
+
+.link_contacto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.link_contacto {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link_contacto p {
+    padding: 0;
+    margin: 0px 0px 0px 3px;
+}
+
+.link_contacto img {
+    width: 24px;
+    height: 24px;
 }
 
 .nav_titulo {

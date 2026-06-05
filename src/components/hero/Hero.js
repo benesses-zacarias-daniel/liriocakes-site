@@ -5,10 +5,14 @@ import Button from "../buttons/Button";
 import { usePagina } from "../context/Context";
 
 const Hero = ({ mostrarExplorar = false, imgFundo = false, src, alt, titulo, tituloFoco, mens }) => {
+
     const { mudarPagina } = usePagina();
     const estiloHeroImg = imgFundo ? style.hero_img_desc : style.area_img;
     const estiloContainer = imgFundo ? style.hero_sobre : style.hero_area_geral;
     const estiloImg = imgFundo ? style.img_fundo : style.img_hero;
+    const numero = "258866204359";
+    const mensagem = "Olá! Gostaria de fazer uma encomenda na Lírio Cake's.";
+    const linkWhatsApp = `https://wa.me/${numero}?text=${mensagem}`
 
     return (
         <div className={estiloContainer}>
@@ -24,7 +28,7 @@ const Hero = ({ mostrarExplorar = false, imgFundo = false, src, alt, titulo, tit
                         </div>
                         <div className={style.hero_btn}>
 
-                            <Button children={<a href="https://wa.me/258849754315?text=Olá! Quero fazer um pedido" className={style.ajustar_link}>Fazer Encomenda</a>} estilo={style.btn_ped} onClick={() => {
+                            <Button children={<a href={`${linkWhatsApp}`} className={style.ajustar_link}>Fazer Encomenda</a>} estilo={style.btn_ped} onClick={() => {
                                 console.log("Fazer Encomenda");
                             }} />
 

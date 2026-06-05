@@ -1,7 +1,7 @@
 import Img from "../img/Img";
-import style from "./Pratos.module.css";
+import style from "./Bolos.module.css";
 
-const Pratos = ({ src, alt, preco, prato, desc }) => {
+const Bolos = ({ src, alt, preco, prato, desc }) => {
     return (
         <div className={style.area_geral_prato}>
             <div className={style.area_img_prato}>
@@ -24,4 +24,4 @@ const Pratos = ({ src, alt, preco, prato, desc }) => {
     );
 }
 
-export default Pratos;
+export default Bolos;
