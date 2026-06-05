@@ -11,7 +11,7 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding: 0px;
+    padding: 0px 2px 0px 0px;
 }
 
 .btn_topo {
