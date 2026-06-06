@@ -31,8 +31,8 @@ const Favoritos = () => {
             </div>
             <div className={style.area_fav_pratos}>
                 <Bolos src={Cakes[0].src} texto={"Bolo de Casamento"} alt={Cakes[0].alt} desc={Cakes[0].descricao} preco={Cakes[0].preco} nomeBolo={Cakes[0].nome} />
-                <Bolos src={Cakes[1].src} alt={Cakes[1].alt} desc={Cakes[1].descricao} preco={Cakes[1].preco} nomeBolo={Cakes[2].nome} />
-                <Bolos src={Cakes[2].src} alt={Cakes[2].alt} desc={Cakes[2].descricao} preco={Cakes[2].preco} nomeBolo={Cakes[1].nome} />
+                <Bolos src={Cakes[3].src} alt={Cakes[1].alt} desc={Cakes[1].descricao} preco={Cakes[1].preco} nomeBolo={Cakes[2].nome} />
+                <Bolos src={Cakes[13].src} alt={Cakes[2].alt} desc={Cakes[2].descricao} preco={Cakes[2].preco} nomeBolo={Cakes[1].nome} />
 
             </div>
         </div>

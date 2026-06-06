@@ -14,6 +14,7 @@ import Presente from "../assets/gift.svg";
 
 const Catalogo = () => {
     const [mostrarTodosPratos, setMostrarTodosPratos] = useState(false);
+    const CakesFiltrado = Cakes.filter(cakes => cakes?.id !== 1 && cakes?.id !== 4 && cakes?.id !== 14);
 
     const onClick = (evt) => {
         if (mostrarTodosPratos) {
@@ -43,21 +44,14 @@ const Catalogo = () => {
                     </div>
                 </div>
                 <div className={style.pratos_d_menu}>
-                    <Bolos src={Cakes[0].src} alt={Cakes[0].alt} desc={Cakes[0].descricao} preco={Cakes[0].preco} nomeBolo={Cakes[0].nome} />
-                    <Bolos src={Cakes[1].src} alt={Cakes[1].alt} desc={Cakes[1].descricao} preco={Cakes[1].preco} nomeBolo={Cakes[2].nome} />
-                    <Bolos src={Cakes[2].src} alt={Cakes[2].alt} desc={Cakes[2].descricao} preco={Cakes[2].preco} nomeBolo={Cakes[1].nome} />
+                    <Bolos src={Cakes[0].src} texto={"Bolo de Casamento"} alt={Cakes[0].alt} desc={Cakes[0].descricao} preco={Cakes[0].preco} nomeBolo={Cakes[0].nome} />
+                    <Bolos src={Cakes[3].src} alt={Cakes[3].alt} desc={Cakes[1].descricao} preco={Cakes[3].preco} nomeBolo={Cakes[3].nome} />
+                    <Bolos src={Cakes[13].src} alt={Cakes[13].alt} desc={Cakes[2].descricao} preco={Cakes[13].preco} nomeBolo={Cakes[13].nome} />
 
                     {
                         mostrarTodosPratos && (
-                            Cakes.map((cakes, index) => {
-                                console.log(cakes.id);
-
-                                if (index > 2) {
-                                    return <Bolos src={cakes.src} key={index} alt={cakes.alt} desc={cakes.descricao} preco={cakes.preco} nomeBolo={cakes.nome} />;
-                                }
-
-                                return null;
-
+                            CakesFiltrado.map((cakes) => {
+                                return <Bolos src={cakes.src} key={cakes.id} alt={cakes.alt} desc={cakes.descricao} preco={cakes.preco} nomeBolo={cakes.nome} />;
                             }
                             )
                         )
