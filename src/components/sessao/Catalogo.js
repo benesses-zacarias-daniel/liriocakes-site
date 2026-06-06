@@ -1,32 +1,14 @@
 import { useState } from "react";
 import Button from "../buttons/Button";
 import Hero from "../hero/Hero";
+import Cakes from "../data/dados";
 import style from "./Catalogo.module.css";
 import Pedido from "../pedido/Pedido";
-import Pratos from "../bolos/Bolos";
+import Bolos from "../bolos/Bolos";
 import Passos from "../bolos/Passos";
 import Lirio from "../assets/image.png";
 import Mensagem from "../assets/sms.svg";
 import WhatsApp from "../assets/cht.svg";
-import Cake1 from "../assets/cakes/cake1.jpg";
-import Cake2 from "../assets/cakes/cake2.jpg";
-import Cake3 from "../assets/cakes/cake3.jpg";
-import Cake4 from "../assets/cakes/cake4.jpg";
-import Cake5 from "../assets/cakes/cake5.jpg";
-import Cake6 from "../assets/cakes/cake6.jpg";
-import Cake7 from "../assets/cakes/cake7.jpg";
-import Cake8 from "../assets/cakes/cake8.jpg";
-import Cake9 from "../assets/cakes/cake9.jpg";
-import Cake10 from "../assets/cakes/cake10.jpg";
-import Cake11 from "../assets/cakes/cake11.jpg";
-import Cake12 from "../assets/cakes/cake12.jpg";
-import Cake13 from "../assets/cakes/cake13.jpg";
-import Cake14 from "../assets/cakes/cake14.jpg";
-import Cake15 from "../assets/cakes/cake15.jpg";
-import Cake16 from "../assets/cakes/cake16.jpg";
-import Cake17 from "../assets/cakes/cake17.jpg";
-import Cake18 from "../assets/cakes/cake18.jpg";
-import Cake19 from "../assets/cakes/cake19.jpg";
 import Cake from "../assets/cake.svg";
 import Presente from "../assets/gift.svg";
 
@@ -61,30 +43,23 @@ const Catalogo = () => {
                     </div>
                 </div>
                 <div className={style.pratos_d_menu}>
-                    <Pratos src={Cake1} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                    <Pratos src={Cake2} alt={"Prato de "} desc={"Mathápa de couvé"} preco={250} prato={"Mathápa"} />
-                    <Pratos src={Cake3} alt={"Prato de "} desc={"Sushi fresco"} preco={250} prato={"Sushimi"} />
+                    <Bolos src={Cakes[0].src} alt={Cakes[0].alt} desc={Cakes[0].descricao} preco={Cakes[0].preco} nomeBolo={Cakes[0].nome} />
+                    <Bolos src={Cakes[1].src} alt={Cakes[1].alt} desc={Cakes[1].descricao} preco={Cakes[1].preco} nomeBolo={Cakes[2].nome} />
+                    <Bolos src={Cakes[2].src} alt={Cakes[2].alt} desc={Cakes[2].descricao} preco={Cakes[2].preco} nomeBolo={Cakes[1].nome} />
 
                     {
                         mostrarTodosPratos && (
-                            <>
-                                <Pratos src={Cake4} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake5} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake6} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake7} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake8} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake9} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake10} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake11} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake12} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake13} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake14} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake15} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake16} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake17} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake18} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                                <Pratos src={Cake19} alt={"Prato de "} desc={"Prato de um bom bla bla"} preco={250} prato={"Filé Minhom"} />
-                            </>
+                            Cakes.map((cakes, index) => {
+                                console.log(cakes.id);
+
+                                if (index > 2) {
+                                    return <Bolos src={cakes.src} key={index} alt={cakes.alt} desc={cakes.descricao} preco={cakes.preco} nomeBolo={cakes.nome} />;
+                                }
+
+                                return null;
+
+                            }
+                            )
                         )
                     }
                 </div>
