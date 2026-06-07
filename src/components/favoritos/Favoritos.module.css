@@ -12,6 +12,7 @@
     flex-direction: column;
     padding: 10px 10px 14px 10px;
     color: var(--marrom);
+    gap: 8px;
 }
 
 .titulo_e_min_desc {

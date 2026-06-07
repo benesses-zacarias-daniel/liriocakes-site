@@ -1,3 +1,10 @@
+:root {
+    --rosa: #e85d9e;
+    --rosa-claro: #fbe3ec;
+    --dourado: #c9a13b;
+    --marrom: #5a3b2e;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,16 +13,10 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-:root {
-    --rosa: #e85d9e;
-    --rosa-claro: #fbe3ec;
-    --dourado: #c9a13b;
-    --marrom: #5a3b2e;
-}
 
-body {
+/* body {
     font-family: "Poppins", sans-serif;
-}
+} */
 
 h1,
 h2,

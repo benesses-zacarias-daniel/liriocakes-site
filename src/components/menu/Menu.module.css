@@ -6,7 +6,10 @@
 
 nav {
     display: flex;
-    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* gap: 5px; */
     flex-wrap: nowrap;
     overflow: hidden;
 }
@@ -19,8 +22,8 @@ nav {
     transition: 0.4s;
 }
 
-.icone {
-    color: #ff6900;
+.meio {
+    padding: 0px 5px 0px 5px;
 }
 
 .estiloActiva {

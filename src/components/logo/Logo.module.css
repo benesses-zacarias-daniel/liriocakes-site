@@ -1,7 +1,8 @@
 .nome_lirio {
     color: #f83490;
     font-size: 14px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: "DM Serif Display", serif;
     display: flex;
     align-items: center;
     justify-content: 1;

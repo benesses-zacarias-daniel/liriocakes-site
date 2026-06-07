@@ -7,7 +7,7 @@ import Facebook from "../assets/facebook.svg";
 import Img from "../img/Img";
 
 
-const Footer = ({ nome, provincia, numeros }) => {
+const Footer = ({ nome, provincia, numeros, desc }) => {
     const numero = "258866204359";
     const mens = "Olá! Gostaria de fazer uma encomenda na Lírio Cake's.";
     const linkWhatsApp = `https://wa.me/${numero}?text=${mens}`
@@ -16,7 +16,7 @@ const Footer = ({ nome, provincia, numeros }) => {
             <div className={style.area_nome_nav}>
                 <div className={style.nome_min_desc}>
                     <Logo alt={`Logo do ${nome}`} src_log={Lanche} logo={nome} />
-                    <p>Bolos, doces e refeições preparados com dedicação para tornar os seus momentos ainda mais especiais.</p>
+                    <p>{desc}</p>
                     <div className={style.area_contacto}>
                         Contactos:
                         <div className={style.contacto}>

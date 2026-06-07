@@ -11,7 +11,7 @@ const AppContext = () => {
       <Topo />
       <main className={style.conteudo_principal} ref={mainRef}>
         <Sessao />
-        <Footer nome={" Lírio Cake's"} numeros={["+258 86 620 4359", "+258 85 673 2466"]} provincia={"Nampula"} />
+        <Footer nome={" Lírio Cake's"} desc={"Bolos deliciosos e personalizados para aniversários, casamentos e eventos em Nampula."} numeros={["+258 86 620 4359", "+258 85 673 2466"]} provincia={"Nampula"} />
       </main>
     </div>
   );

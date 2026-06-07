@@ -10,7 +10,7 @@ const Menu = ({ mostrar = false }) => {
                 mudarPagina("inicio");
             }}>{mostrar && ("> ")}Início</Link>
 
-            <Link to={"/liriocakes/catalogo"} className={`${style.links} ${paginaAtiva === "catalogo" ? style.estiloActiva : ""}`} onClick={(evt) => {
+            <Link to={"/liriocakes/catalogo"} className={`${style.links} ${style.meio} ${paginaAtiva === "catalogo" ? style.estiloActiva : ""}`} onClick={(evt) => {
                 mudarPagina("catalogo");
             }}>{mostrar && ("> ")}Catálogo</Link>
 
