@@ -26,6 +26,14 @@ nav {
     padding: 0px 5px 0px 5px;
 }
 
+.primeiro {
+    padding: 5px 0px 0px 0px;
+}
+
+.ultimo {
+    padding: 0px 0px 0px 5px;
+}
+
 .estiloActiva {
     border-bottom: 2px solid var(--rosa);
     font-weight: 700;

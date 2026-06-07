@@ -6,7 +6,7 @@ const Menu = ({ mostrar = false }) => {
     const { paginaAtiva, mudarPagina } = usePagina();
     return (
         <nav>
-            <Link to={"/liriocakes/inicio"} className={`${style.links} ${paginaAtiva === "inicio" ? style.estiloActiva : ""}`} onClick={(evt) => {
+            <Link to={"/liriocakes/inicio"} className={`${style.links} ${style.primeiro} ${paginaAtiva === "inicio" ? style.estiloActiva : ""}`} onClick={(evt) => {
                 mudarPagina("inicio");
             }}>{mostrar && ("> ")}Início</Link>
 
@@ -14,7 +14,7 @@ const Menu = ({ mostrar = false }) => {
                 mudarPagina("catalogo");
             }}>{mostrar && ("> ")}Catálogo</Link>
 
-            <Link to={"/liriocakes/sobre"} className={`${style.links} ${paginaAtiva === "sobre" ? style.estiloActiva : ""}`} onClick={(evt) => {
+            <Link to={"/liriocakes/sobre"} className={`${style.links} ${style.ultimo} ${paginaAtiva === "sobre" ? style.estiloActiva : ""}`} onClick={(evt) => {
                 mudarPagina("sobre");
             }}>{mostrar && ("> ")}Sobre Nós</Link>
         </nav>
