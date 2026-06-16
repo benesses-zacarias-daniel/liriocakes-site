@@ -36,17 +36,17 @@ footer {
 
 .nome_min_desc {
     height: 100%;
-    width: 260px;
+    width: auto;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 0px;
+    padding: 10px 0px 0px 0px;
 }
 
 .nome_min_desc p {
     text-align: start;
-    padding: 6px 0px 0px 0px;
+    padding: 10px 5px 0px 0px;
 }
 
 .area_contacto {
@@ -136,15 +136,4 @@ hr {
     background: var(--marrom);
     margin: 12px 0px 12px 0px;
     width: 95%;
-}
-
-/*Media Querys*/
-@media only screen and (min-width:400px) {
-    .nome_min_desc {
-        margin-right: 100px;
-    }
-
-    .area_atalho_nav {
-        margin-left: 100px;
-    }
 }

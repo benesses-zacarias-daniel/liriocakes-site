@@ -1,7 +1,7 @@
 import Img from "../img/Img";
 import style from "./Passos.module.css";
 
-const Passos = ({ titulo, minInfo, passos, srcs, alts, descs, }) => {
+const Passos = ({ titulo, minInfo, dados }) => {
     return (
         <div className={style.area_geral_passos}>
             <div className={style.titulo_passos}>
@@ -13,40 +13,19 @@ const Passos = ({ titulo, minInfo, passos, srcs, alts, descs, }) => {
                 )}
             </div>
             <div className={style.area_passos}>
-                <div className={style.passos}>
-                    <div className={style.area_img_passos}>
-                        <Img src={srcs[0]} alt={alts[0]} estilo={style.passos_img} />
-                    </div>
-                    <div className={style.info_passo}>
-                        <p className={style.titulo_passo}>{passos[0]}</p>
-                        <div className={style.desc_passos}>
-                            {descs[0]}
+                {dados.map((passos) => {
+                    return (<div key={passos.id} className={style.passos}>
+                        <div className={style.area_img_passos}>
+                            <Img src={passos.src} alt={passos.alt} estilo={style.passos_img} />
                         </div>
-                    </div>
-                </div>
-                <div className={style.passos}>
-                    <div className={style.area_img_passos}>
-                        <Img src={srcs[1]} alt={alts[1]} estilo={style.passos_img} />
-                    </div>
-
-                    <div className={style.info_passo}>
-                        <p className={style.titulo_passo}>{passos[1]}</p>
-                        <div className={style.desc_passos}>
-                            {descs[1]}
+                        <div className={style.info_passo}>
+                            <p className={style.titulo_passo}>{passos.passo}</p>
+                            <div className={style.desc_passos}>
+                                {passos.desc}
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className={style.passos}>
-                    <div className={style.area_img_passos}>
-                        <Img src={srcs[2]} alt={alts[2]} estilo={style.passos_img} />
-                    </div>
-                    <div className={style.info_passo}>
-                        <p className={style.titulo_passo}>{passos[2]}</p>
-                        <div className={style.desc_passos}>
-                            {descs[2]}
-                        </div>
-                    </div>
-                </div>
+                    </div>)
+                })}
             </div>
         </div>
     )

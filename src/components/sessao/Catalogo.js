@@ -16,6 +16,27 @@ const Catalogo = () => {
     const [mostrarTodosPratos, setMostrarTodosPratos] = useState(false);
     const CakesFiltrado = Cakes.filter(cakes => cakes?.id !== 1 && cakes?.id !== 4 && cakes?.id !== 14);
 
+    const PassosCatalogo = [
+        {
+            "id": 1,
+            "passo": "Escolha",
+            "desc": "Explore nosso catálogo e encontre o bolo ou doce prefeito para sua ocasião.",
+            "alt": "Ícone de Bolo",
+            "src": Cake
+        }, {
+            "id": 2,
+            "passo": "Encomende",
+            "desc": "Entre em contacto pelo WhatsApp e informe os dados do seu pedido.",
+            "alt": "Ícone de Mensagem",
+            "src": Mensagem
+        }, {
+            "id": 3,
+            "passo": "Receba",
+            "desc": "Produzimos tudo com carrinho e entregamos no prazo combinado.",
+            "alt": "Ícone de Embrulho de Presente",
+            "src": Presente
+        }];
+
     const onClick = (evt) => {
         if (mostrarTodosPratos) {
             setMostrarTodosPratos(false);
@@ -57,7 +78,7 @@ const Catalogo = () => {
                         )
                     }
                 </div>
-                <Passos titulo={"Os 3 Passos da Encomenda"} minInfo={""} srcs={[Cake, Mensagem, Presente]} descs={["Explore nosso catálogo e encontre o bolo ou doce prefeito para sua ocasião.", "Entre em contacto pelo WhatsApp e informe os dados do seu pedido.", "Produzimos tudo com carrinho e entregamos no prazo combinado."]} alts={["Ícone de colher e garfo cruzados", "Ícone de carrinho de super mercado", "Ícone de carro de entrega"]} passos={["Escolha", "Encomende", "Receba"]} />
+                <Passos titulo={"Os 3 Passos da Encomenda"} minInfo={""} dados={PassosCatalogo} />
                 <Pedido tipo={2} alt={"Ícone de mensagem"} titulo_pedido={"Encontrou o bolo dos seus sonhos ?"} desc_pedido={"Clique no botão abaixo para nos enviar sua escolha pelo WhatsApp. Personalizamos o tamanho, a massa e o recheio do jeito que você desejar!"} src={WhatsApp} texto={"Encomendar pelo WhatsApp"} estiloBtn={style.btn_comer} />
             </div>
         </div>
